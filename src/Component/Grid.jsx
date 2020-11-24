@@ -1,5 +1,8 @@
 import React from 'react'
-import {  Label,Grid, Image, Segment } from 'semantic-ui-react'
+
+import {  Label,Grid, Segment} from 'semantic-ui-react'
+import Card from './Card'
+import ContentBlock from './ContentBlock'
 
 const GridExampleCelled = () => (
     <Grid columns={2}>
@@ -9,8 +12,8 @@ const GridExampleCelled = () => (
           Overview
         </Label>
         <span >Account Details</span>
-
-        <Image src='https://react.semantic-ui.com/logo.png' />
+        <Card/>
+        
 
         
 
@@ -23,7 +26,7 @@ const GridExampleCelled = () => (
         <Label as='a' color='black' ribbon='left'>
           Specs
         </Label>
-        <Image src='https://react.semantic-ui.com/logo.png' />
+        <ContentBlock/>
 
         
       </Segment>
